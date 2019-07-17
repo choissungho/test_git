@@ -120,6 +120,21 @@ router.get('/07image', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
+router.get('/08Buttons', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho/08Buttons.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/09Collapse', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho/09Collapse.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/09Collapse2', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho/09Collapse2.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
 
 
 app.use('/', router);
