@@ -41,13 +41,23 @@ router.get('/jo_grid', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
-router.get('/jo_typography', function (req, res) {
-    res.sendFile(path.join(__dirname + '/beomjin/jo_typography.html'));
+router.get('/jo_typography1', function (req, res) {
+    res.sendFile(path.join(__dirname + '/beomjin/jo_typography1.html'));
     //__dirname : It will resolve to your project folder.
 });
 
 router.get('/jo_typography2', function (req, res) {
     res.sendFile(path.join(__dirname + '/beomjin/jo_typography2.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/grid1', function (req, res) {
+    res.sendFile(path.join(__dirname + '/beomjin/grid1.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/grid2', function (req, res) {
+    res.sendFile(path.join(__dirname + '/beomjin/grid2.html'));
     //__dirname : It will resolve to your project folder.
 });
 
@@ -86,16 +96,6 @@ router.get('/03Grid', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
-router.get('/03Gridtest1', function (req, res) {
-    res.sendFile(path.join(__dirname + '/sungho/03Gridtest1.html'));
-    //__dirname : It will resolve to your project folder.
-});
-
-router.get('/03Gridtest2', function (req, res) {
-    res.sendFile(path.join(__dirname + '/sungho/03Gridtest2.html'));
-    //__dirname : It will resolve to your project folder.
-});
-
 router.get('/04Typography(1)', function (req, res) {
     res.sendFile(path.join(__dirname + '/sungho/04Typography1.html'));
     //__dirname : It will resolve to your project folder.
@@ -110,8 +110,8 @@ router.get('/06Table1', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
-router.get('/06Table2responsive', function (req, res) {
-    res.sendFile(path.join(__dirname + '/sungho/06Table2responsive.html'));
+router.get('/06Table2 responsive', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho/06Table2 responsive.html'));
     //__dirname : It will resolve to your project folder.
 });
 
