@@ -75,6 +75,21 @@ router.get('/05Typography(2)', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
+router.get('/06Table1', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho/06Table1.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/06Table2 responsive', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho/06Table2 responsive.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/07image', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho/07image.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
 
 
 app.use('/', router);
