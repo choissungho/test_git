@@ -46,6 +46,26 @@ router.get('/jo_typography', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
+router.get('/jo_typography2', function (req, res) {
+    res.sendFile(path.join(__dirname + '/beomjin/jo_typography2.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/jo_table1', function (req, res) {
+    res.sendFile(path.join(__dirname + '/beomjin/table1.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/jo_table2', function (req, res) {
+    res.sendFile(path.join(__dirname + '/beomjin/table2.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/jo_image', function (req, res) {
+    res.sendFile(path.join(__dirname + '/beomjin/jo_image.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
 router.get('/sungho', function (req, res) {
     res.sendFile(path.join(__dirname + '/sungho/sungho.html'));
     //__dirname : It will resolve to your project folder.
