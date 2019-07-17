@@ -65,6 +65,11 @@ router.get('/boot4', function (req, res) {
     res.sendFile(path.join(__dirname + '/sungho/boot4.html'));
     //__dirname : It will resolve to your project folder.
     });
+
+    router.get('/07_17_boot6', function (req, res) {
+        res.sendFile(path.join(__dirname + '/sungho/07_17_boot6.html'));
+        //__dirname : It will resolve to your project folder.
+        });     
     
    
 
