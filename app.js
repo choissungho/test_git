@@ -86,6 +86,16 @@ router.get('/03Grid', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
+router.get('/03Gridtest1', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho/03Gridtest1.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/03Gridtest2', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho/03Gridtest2.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
 router.get('/04Typography(1)', function (req, res) {
     res.sendFile(path.join(__dirname + '/sungho/04Typography1.html'));
     //__dirname : It will resolve to your project folder.
