@@ -12,66 +12,70 @@ app.use(express.static('sunghoimg'))
 const path = require('path');
 const router = express.Router();
 router.get('/', function (req, res) {
-res.sendFile(path.join(__dirname + '/index.html'));
-//__dirname : It will resolve to your project folder.
+    res.sendFile(path.join(__dirname + '/index.html'));
+    //__dirname : It will resolve to your project folder.
 });
 
 router.get('/external', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/external.html'));
     //__dirname : It will resolve to your project folder.
-    });
+});
 
 router.get('/beomjin', function (req, res) {
     res.sendFile(path.join(__dirname + '/beomjin.html'));
     //__dirname : It will resolve to your project folder.
-    });
+});
 
 router.get('/jo_utilities2', function (req, res) {
     res.sendFile(path.join(__dirname + '/beomjin/jo_utilities2.html'));
     //__dirname : It will resolve to your project folder.
-    });
+});
 
 router.get('/jo_2', function (req, res) {
     res.sendFile(path.join(__dirname + '/beomjin/jo_try_utilities.html'));
     //__dirname : It will resolve to your project folder.
-    });
+});
 
 router.get('/jo_grid', function (req, res) {
     res.sendFile(path.join(__dirname + '/beomjin/jo_grid.html'));
     //__dirname : It will resolve to your project folder.
-    });   
-    
+});
+
 router.get('/jo_typography', function (req, res) {
     res.sendFile(path.join(__dirname + '/beomjin/jo_typography.html'));
     //__dirname : It will resolve to your project folder.
-    });     
+});
 
 router.get('/sungho', function (req, res) {
     res.sendFile(path.join(__dirname + '/sungho/sungho.html'));
     //__dirname : It will resolve to your project folder.
-    });
+});
 
-router.get('/boot2', function (req, res) {
-    res.sendFile(path.join(__dirname + '/sungho/boot2.html'));
+router.get('/01Utilities(1)', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho/01Utilities1.html'));
     //__dirname : It will resolve to your project folder.
-    });
+});
 
-router.get('/boot3', function (req, res) {
-    res.sendFile(path.join(__dirname + '/sungho/boot3.html'));
+router.get('/02Utilities(2)', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho/02Utilities2.html'));
     //__dirname : It will resolve to your project folder.
-    });
+});
 
-router.get('/boot4', function (req, res) {
-    res.sendFile(path.join(__dirname + '/sungho/boot4.html'));
+router.get('/03Grid', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho/03Grid.html'));
     //__dirname : It will resolve to your project folder.
-    });
+});
 
-    router.get('/07_17_boot6', function (req, res) {
-        res.sendFile(path.join(__dirname + '/sungho/07_17_boot6.html'));
-        //__dirname : It will resolve to your project folder.
-        });     
-    
-   
+router.get('/04Typography(1)', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho/04Typography1.html'));
+    //__dirname : It will resolve to your project folder.
+});
+router.get('/05Typography(2)', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho/05Typography2.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+
 
 app.use('/', router);
 
