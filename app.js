@@ -39,7 +39,12 @@ router.get('/jo_2', function (req, res) {
 router.get('/jo_grid', function (req, res) {
     res.sendFile(path.join(__dirname + '/beomjin/jo_grid.html'));
     //__dirname : It will resolve to your project folder.
-    });    
+    });   
+    
+router.get('/jo_typography', function (req, res) {
+    res.sendFile(path.join(__dirname + '/beomjin/jo_typography.html'));
+    //__dirname : It will resolve to your project folder.
+    });     
 
 router.get('/sungho', function (req, res) {
     res.sendFile(path.join(__dirname + '/sungho/sungho.html'));
@@ -59,7 +64,9 @@ router.get('/boot3', function (req, res) {
 router.get('/boot4', function (req, res) {
     res.sendFile(path.join(__dirname + '/sungho/boot4.html'));
     //__dirname : It will resolve to your project folder.
-    });    
+    });
+    
+   
 
 app.use('/', router);
 
