@@ -100,8 +100,8 @@ router.get('/06Table1', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
-router.get('/06Table2 responsive', function (req, res) {
-    res.sendFile(path.join(__dirname + '/sungho/06Table2 responsive.html'));
+router.get('/06Table2responsive', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho/06Table2responsive.html'));
     //__dirname : It will resolve to your project folder.
 });
 
