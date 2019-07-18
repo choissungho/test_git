@@ -11,6 +11,18 @@ app.use(express.static('sunghoimg'))
 
 const path = require('path');
 const router = express.Router();
+
+router.get('/detail', function (req, res) {
+    console.log(req.query.email);
+    res.send('E-Mail : '+req.query.email)
+});
+
+
+router.get('/action_page', function (req, res) {
+    console.log(req.query);
+    res.send('E-mail : '+req.query.email+', Password : '+req.query.password+', On/Off : '+req.query.radio)
+});
+
 router.get('/', function (req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
     //__dirname : It will resolve to your project folder.
@@ -98,6 +110,11 @@ router.get('/jo_dropdowns', function (req, res) {
 
 router.get('/jo_navbar', function (req, res) {
     res.sendFile(path.join(__dirname + '/beomjin/jo_navbar.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/jo_form', function (req, res) {
+    res.sendFile(path.join(__dirname + '/beomjin/jo_form.html'));
     //__dirname : It will resolve to your project folder.
 });
 
