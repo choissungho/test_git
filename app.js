@@ -15,10 +15,31 @@ const router = express.Router();
 
 router.get('/detail', function (req, res) {
     console.log(req.query.email);
-    res.send('Request parameters : '+req.query.email+', '+req.query.password+', '+req.query.checkbox+', '+req.query.radio)
-    });
+    res.send('Request parameters : ' + req.query.email + ', ' + req.query.password + ', ' + req.query.checkbox + ', ' + req.query.radio
+        + ', ' + req.query.Username + ', ' + req.query.Something)
+});
 
-   
+router.get('/detail2', function (req, res) {
+    console.log(req.query);
+    res.send('Request parameters : ' + req.query.email1 + 'Request parameters : ' + req.query.password1 + ', ' + req.query.checkbox1)
+});
+
+router.get('/detail3', function (req, res) {
+    console.log(req.query);
+    res.send('Request parameters : ' + req.query.email2 + ', ' + req.query.password2 + ', ' + req.query.text)
+});
+
+router.get('/detail4', function (req, res) {
+    console.log(req.query);
+    res.send('Request parameters : ' + req.query.list1 + ', ' + req.query.list2)
+});
+
+router.get('/detail5', function (req, res) {
+    console.log(req.query);
+    res.send('Request parameters : ' + req.query.Success + ', ' + req.query.Warning + ', ' + req.query.Error)
+});
+
+
 router.get('/', function (req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
     //__dirname : It will resolve to your project folder.
@@ -188,6 +209,15 @@ router.get('/0718_Input_form_grouo', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
+router.get('/0718_Components', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho/0718_Components.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/0718_Input_form_test', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho/0718_Input_form_test.html'));
+    //__dirname : It will resolve to your project folder.
+});
 
 
 app.use('/', router);
