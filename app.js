@@ -96,57 +96,62 @@ router.get('/sungho', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
-router.get('/0717_01Utilities(1)', function (req, res) {
-    res.sendFile(path.join(__dirname + '/sungho/01Utilities1.html'));
+router.get('/0717_01Utilities1', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho/0717_01Utilities1.html'));
     //__dirname : It will resolve to your project folder.
 });
 
-router.get('/0717_02Utilities(2)', function (req, res) {
-    res.sendFile(path.join(__dirname + '/sungho/02Utilities2.html'));
+router.get('/0717_02Utilities2', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho/0717_02Utilities2.html'));
     //__dirname : It will resolve to your project folder.
 });
 
 router.get('/0717_03Grid', function (req, res) {
-    res.sendFile(path.join(__dirname + '/sungho/03Grid.html'));
+    res.sendFile(path.join(__dirname + '/sungho/0717_03Grid.html'));
     //__dirname : It will resolve to your project folder.
 });
 
-router.get('/0717_04Typography(1)', function (req, res) {
-    res.sendFile(path.join(__dirname + '/sungho/04Typography1.html'));
+router.get('/0717_04Typography1', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho/0717_04Typography1.html'));
     //__dirname : It will resolve to your project folder.
 });
-router.get('/0717_05Typography(2)', function (req, res) {
-    res.sendFile(path.join(__dirname + '/sungho/05Typography2.html'));
+router.get('/0717_05Typography2', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho/0717_05Typography2.html'));
     //__dirname : It will resolve to your project folder.
 });
 
 router.get('/0717_06Table1', function (req, res) {
-    res.sendFile(path.join(__dirname + '/sungho/06Table1.html'));
+    res.sendFile(path.join(__dirname + '/sungho/0717_06Table1.html'));
     //__dirname : It will resolve to your project folder.
 });
 
 router.get('/0717_06Table2 responsive', function (req, res) {
-    res.sendFile(path.join(__dirname + '/sungho/06Table2 responsive.html'));
+    res.sendFile(path.join(__dirname + '/sungho/0717_06Table2 responsive.html'));
     //__dirname : It will resolve to your project folder.
 });
 
 router.get('/0717_07image', function (req, res) {
-    res.sendFile(path.join(__dirname + '/sungho/07image.html'));
+    res.sendFile(path.join(__dirname + '/sungho/0717_07image.html'));
     //__dirname : It will resolve to your project folder.
 });
 
 router.get('/0717_08Buttons', function (req, res) {
-    res.sendFile(path.join(__dirname + '/sungho/08Buttons.html'));
+    res.sendFile(path.join(__dirname + '/sungho/0717_08Buttons.html'));
     //__dirname : It will resolve to your project folder.
 });
 
 router.get('/0717_09Collapse', function (req, res) {
-    res.sendFile(path.join(__dirname + '/sungho/09Collapse.html'));
+    res.sendFile(path.join(__dirname + '/sungho/0717_09Collapse.html'));
     //__dirname : It will resolve to your project folder.
 });
 
 router.get('/0717_09Collapse2', function (req, res) {
-    res.sendFile(path.join(__dirname + '/sungho/09Collapse2.html'));
+    res.sendFile(path.join(__dirname + '/sungho/0717_09Collapse2.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/0718_01Dropdowns1', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho/0718_01Dropdowns1.html'));
     //__dirname : It will resolve to your project folder.
 });
 
