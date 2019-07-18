@@ -104,6 +104,11 @@ router.get('/jo_dropdowns', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
+router.get('/jo_navbar', function (req, res) {
+    res.sendFile(path.join(__dirname + '/beomjin/jo_navbar.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
 router.get('/sungho', function (req, res) {
     res.sendFile(path.join(__dirname + '/sungho/sungho.html'));
     //__dirname : It will resolve to your project folder.
