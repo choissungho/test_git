@@ -20,7 +20,23 @@ router.get('/detail', function (req, res) {
 
 router.get('/action_page', function (req, res) {
     console.log(req.query);
-    res.send('E-mail : '+req.query.email+', Password : '+req.query.password+', On/Off : '+req.query.radio)
+    res.send('E-mail : '+req.query.email+', Password : '+req.query.password+', On/Off : '+req.query.check)
+});
+
+
+router.get('/action_page2', function (req, res) {
+    console.log(req.query);
+    res.send('select one : '+req.query.single_num+', multiple select : '+req.query.multi_num)
+});
+
+router.get('/action_page3', function (req, res) {
+    console.log(req.query);
+    res.send('E-mail : '+req.query.email+', Password : '+req.query.password+', Text : '+req.query.addition_text)
+});
+
+router.get('/action_page4', function (req, res) {
+    console.log(req.query);
+    res.send('Disabled : '+req.query.disabled+', Success : '+req.query.success+', Warning : '+req.query.warning+', Error : '+req.query.error)
 });
 
 router.get('/', function (req, res) {
@@ -115,6 +131,11 @@ router.get('/jo_navbar', function (req, res) {
 
 router.get('/jo_form', function (req, res) {
     res.sendFile(path.join(__dirname + '/beomjin/jo_form.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/jo_inputTest', function (req, res) {
+    res.sendFile(path.join(__dirname + '/beomjin/jo_inputTest.html'));
     //__dirname : It will resolve to your project folder.
 });
 
