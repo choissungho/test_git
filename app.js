@@ -96,56 +96,56 @@ router.get('/sungho', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
-router.get('/01Utilities(1)', function (req, res) {
+router.get('/0717_01Utilities(1)', function (req, res) {
     res.sendFile(path.join(__dirname + '/sungho/01Utilities1.html'));
     //__dirname : It will resolve to your project folder.
 });
 
-router.get('/02Utilities(2)', function (req, res) {
+router.get('/0717_02Utilities(2)', function (req, res) {
     res.sendFile(path.join(__dirname + '/sungho/02Utilities2.html'));
     //__dirname : It will resolve to your project folder.
 });
 
-router.get('/03Grid', function (req, res) {
+router.get('/0717_03Grid', function (req, res) {
     res.sendFile(path.join(__dirname + '/sungho/03Grid.html'));
     //__dirname : It will resolve to your project folder.
 });
 
-router.get('/04Typography(1)', function (req, res) {
+router.get('/0717_04Typography(1)', function (req, res) {
     res.sendFile(path.join(__dirname + '/sungho/04Typography1.html'));
     //__dirname : It will resolve to your project folder.
 });
-router.get('/05Typography(2)', function (req, res) {
+router.get('/0717_05Typography(2)', function (req, res) {
     res.sendFile(path.join(__dirname + '/sungho/05Typography2.html'));
     //__dirname : It will resolve to your project folder.
 });
 
-router.get('/06Table1', function (req, res) {
+router.get('/0717_06Table1', function (req, res) {
     res.sendFile(path.join(__dirname + '/sungho/06Table1.html'));
     //__dirname : It will resolve to your project folder.
 });
 
-router.get('/06Table2 responsive', function (req, res) {
+router.get('/0717_06Table2 responsive', function (req, res) {
     res.sendFile(path.join(__dirname + '/sungho/06Table2 responsive.html'));
     //__dirname : It will resolve to your project folder.
 });
 
-router.get('/07image', function (req, res) {
+router.get('/0717_07image', function (req, res) {
     res.sendFile(path.join(__dirname + '/sungho/07image.html'));
     //__dirname : It will resolve to your project folder.
 });
 
-router.get('/08Buttons', function (req, res) {
+router.get('/0717_08Buttons', function (req, res) {
     res.sendFile(path.join(__dirname + '/sungho/08Buttons.html'));
     //__dirname : It will resolve to your project folder.
 });
 
-router.get('/09Collapse', function (req, res) {
+router.get('/0717_09Collapse', function (req, res) {
     res.sendFile(path.join(__dirname + '/sungho/09Collapse.html'));
     //__dirname : It will resolve to your project folder.
 });
 
-router.get('/09Collapse2', function (req, res) {
+router.get('/0717_09Collapse2', function (req, res) {
     res.sendFile(path.join(__dirname + '/sungho/09Collapse2.html'));
     //__dirname : It will resolve to your project folder.
 });
