@@ -21,22 +21,22 @@ router.get('/detail', function (req, res) {
 
 router.get('/detail2', function (req, res) {
     console.log(req.query);
-    res.send('Request parameters : ' + req.query.email1 + 'Request parameters : ' + req.query.password1 + ', ' + req.query.checkbox1)
+    res.send('Email : ' + req.query.email1 + 'Password : ' + req.query.password1 + 'checkbox : ' + req.query.checkbox1)
 });
 
 router.get('/detail3', function (req, res) {
     console.log(req.query);
-    res.send('Request parameters : ' + req.query.email2 + ', ' + req.query.password2 + ', ' + req.query.text)
+    res.send('Email : ' + req.query.email2 + 'Password : ' + req.query.password2 + 'Text : ' + req.query.text)
 });
 
 router.get('/detail4', function (req, res) {
     console.log(req.query);
-    res.send('Request parameters : ' + req.query.list1 + ', ' + req.query.list2)
+    res.send('list1 : ' + req.query.list1 + 'list2 : ' + req.query.list2)
 });
 
 router.get('/detail5', function (req, res) {
     console.log(req.query);
-    res.send('Request parameters : ' + req.query.Success + ', ' + req.query.Warning + ', ' + req.query.Error)
+    res.send('Success : ' + req.query.Success + 'Warning : ' + req.query.Warning + 'Error : ' + req.query.Error)
 });
 
 
@@ -244,6 +244,11 @@ router.get('/0718_Input_form_grouo', function (req, res) {
 
 router.get('/0718_Components', function (req, res) {
     res.sendFile(path.join(__dirname + '/sungho/0718_Components.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/0718_Card1', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho/0718_Card1.html'));
     //__dirname : It will resolve to your project folder.
 });
 
