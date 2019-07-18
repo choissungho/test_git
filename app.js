@@ -160,6 +160,11 @@ router.get('/0718_01Dropdowns1', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
+router.get('/0718_Navber1', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho/0718_Navber1.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
 
 
 app.use('/', router);
