@@ -11,6 +11,14 @@ app.use(express.static('sunghoimg'))
 
 const path = require('path');
 const router = express.Router();
+
+
+router.get('/detail', function (req, res) {
+    console.log(req.query.email);
+    res.send('Request parameters : '+req.query.email+', '+req.query.password+', '+req.query.checkbox+', '+req.query.radio)
+    });
+
+   
 router.get('/', function (req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
     //__dirname : It will resolve to your project folder.
@@ -162,6 +170,16 @@ router.get('/0718_01Dropdowns1', function (req, res) {
 
 router.get('/0718_Navber1', function (req, res) {
     res.sendFile(path.join(__dirname + '/sungho/0718_Navber1.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/0718_Navber2', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho/0718_Navber2.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/0718_Input_form_grouo', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho/0718_Input_form_grouo.html'));
     //__dirname : It will resolve to your project folder.
 });
 
