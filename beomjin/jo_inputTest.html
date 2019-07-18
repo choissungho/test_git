@@ -1,0 +1,137 @@
+<html>
+
+<head>
+
+    <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- 1번째 이메일, 비밀번호 submit 기능 -->
+
+        <form action="/action_page">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input name="email" type="email" class="form-control" id="exampleInputEmail1"
+                    aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input name="password" type="password" class="form-control" id="exampleInputPassword1"
+                    placeholder="Enter password">
+            </div>
+            <div class="form-group form-check">
+                <input name="check" type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-outline-secondary">Submit</button>
+        </form>
+
+        <p>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        </p>
+        <!-- 2번째 select submit 기능 -->
+        <form action="/action_page2">
+
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Select list (select one): </label>
+                <select class="form-control" id="exampleFormControlSelect1" name="single_num">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect2">Multiple select list</label>
+                <select multiple class="form-control" id="exampleFormControlSelect2" name="multi_num">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-outline-secondary">Submit</button>
+        </form>
+
+        <p>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        </p>
+        <!-- 3번째 이메일 페스워드 텍스트 submit -->
+        <form action="/action_page3">
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-user"></i></span>
+                </div>
+                <input type="text" name="email" class="form-control" placeholder="Username">
+            </div>
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                </div>
+                <input type="password" name="password" class="form-control" placeholder="Password">
+            </div>
+
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Text</span>
+                </div>
+                <input type="text" name="addition_text" class="form-control" placeholder="Additional Info">
+
+            </div>
+            <div class="input-group-append">
+                <button type="submit" class="btn btn-outline-secondary">Submit</button>
+            </div>
+
+        </form>
+
+        <p>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        </p>
+        <!-- 4번째 disabled, success, warning, error submit 기능 -->
+
+
+        <form action="/action_page4">
+            <div class="form-group">
+                <label for="Disabled_message" class="text-success">Disabled</label>
+                <input name="disabled" type="text" class="form-control" id="Disabled_message"
+                    aria-describedby="emailHelp"  disabled>
+            </div>
+            <div class="form-group">
+                <label for="Success_message" class="text-success">Success</label>
+                <input name="success" type="text" class="form-control is-valid" id="Success_message">
+            </div>
+            <div class="form-group has-warning has-feedback">
+                    <label for="Warning_message" class="text-warning">Warning</label>
+                    <input name="warning" type="text" class="border-warning form-control" id="Warning_message">
+                </div>
+
+                <div class="form-group">
+                        <label for="Error_message" class="text-error">Error</label>
+                        <input name="error" type="text" class="form-control is-Invalid" id="Error_message">
+                    </div>
+
+                    <button type="submit" class="btn btn-outline-secondary">Submit</button>
+        </form>
+
+
+
+
+    </div>
+
+</body>
+
+</html>
